@@ -37,7 +37,7 @@ class JiraController extends Controller
     public function createProject(ProjectCreateRequest $request): JsonResponse
     {
         $response = $this->jiraService->createProject($request->all());
-        
+
         return response()->json($response);
     }
 
@@ -49,6 +49,7 @@ class JiraController extends Controller
     public function createIssue(IssueCreateRequest $request): JsonResponse
     {
         $response = $this->jiraService->createIssue($request->all());
+        
         return response()->json($response);
     }
 }
