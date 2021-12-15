@@ -27,6 +27,7 @@ class JiraController extends Controller
     public function __construct(JiraService $jiraService)
     {
         $this->jiraService = $jiraService;
+        
     }
 
     /**
